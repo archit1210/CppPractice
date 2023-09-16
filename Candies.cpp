@@ -1,17 +1,16 @@
-#include <iostream>
-#include <iomanip> // For setprecision
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    // Declare variables as double
-    double principal, rate, time;
-    cin >> principal >> rate >> time;
-
-    // Calculate interest
-    double interest = (principal * rate * time) / 100;
-
-    // Set the precision to 6 decimal places
-    cout << fixed << setprecision(6) << interest << endl;
-
-    return 0;
+	// your code goes here
+	int candies,n;
+	cin>>candies>>n;
+	
+	if(candies % n == 0){
+		cout<<"YES";
+	}
+	else{
+		cout<<"NO";
+	}
+	return 0;
 }
